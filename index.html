@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Section -->
+<!-- Landing Section -->
+<section class="landing">
+    <h1>Welcome to My Portfolio</h1>
+    <div id="typewriter" class="typewriter"></div><br>
+    <a href="about.html" class="cta">Learn More</a>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Aditya Sr.</p>
+    </footer>
+    <script>
+        const phrases = [
+        "I'm a passionate developer.",
+        "Always eager to learn new things.",
+        "Innovation is my greatest passion."
+    ];
+    
+        
+        let i = 0; // Current phrase index
+        let j = 0; // Current character index
+        let currentPhrase = phrases[i];
+        const typewriterElement = document.getElementById('typewriter');
+    
+        function type() {
+            if (j < currentPhrase.length) {
+                typewriterElement.textContent += currentPhrase.charAt(j);
+                j++;
+                setTimeout(type, 100); // Typing speed
+            } else {
+                setTimeout(backspace, 1500); // Wait before backspacing
+            }
+        }
+    
+        function backspace() {
+            if (j > 0) {
+                typewriterElement.textContent = currentPhrase.substring(0, j - 1);
+                j--;
+                setTimeout(backspace, 50); // Backspacing speed
+            } else {
+                i = (i + 1) % phrases.length; // Move to the next phrase
+                currentPhrase = phrases[i];
+                setTimeout(type, 500); // Wait before typing the next phrase
+            }
+        }
+    
+        // Start the typewriter effect
+        type();
+    </script>
+    
+</body>
+</html>
