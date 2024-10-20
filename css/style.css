@@ -1,0 +1,318 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #ffffff;
+}
+
+/* Navbar */
+header {
+    background-color: #001f3f;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+}
+
+/* Landing Page */
+
+.landing {
+    height: 100vh;
+    background: #002855;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Added padding */
+}
+
+.landing h1 {
+    font-size: 4rem;
+    margin-bottom: 20px; /* Ensure spacing between h1 and p */
+    color: #f4b400;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.landing p {
+    font-size: 1.5rem;
+    color: #cbd3df;
+    margin-bottom: 30px; /* Ensure spacing between p and button */
+}
+h1 {
+    font-family: 'Arial', sans-serif; /* Choose a modern, sans-serif font */
+    font-size: 3.5rem; /* Increase the size for better prominence */
+    font-weight: 800; /* Make the text bold */
+    color: #f4b400; /* Use a bright color to catch attention */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+
+.typewriter {
+    font-size: 1.5rem;
+    color: #f4b400; /* Change this to your preferred color */
+    border-right: 2px solid #f4b400; /* Cursor effect */
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Hides text that overflows */
+}
+.cta {
+    padding: 15px 30px;
+    background-color: #f4b400;
+    color: #001f3f;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #ffd966;
+    transform: translateY(-3px);
+}
+
+/* About Page */
+.about {
+    padding: 100px 20px;
+    background-color: #002855;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #f4b400;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #cbd3df;
+}
+
+/* Languages Section */
+.languages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between tiles */
+    margin: 20px 0; /* Space above and below the sections */
+}
+
+.language-tile {
+    background-color: #004080;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px; /* Set a fixed width for tiles */
+}
+
+.language-tile img {
+    width: 100px; /* Adjust size of the icons */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.language-tile h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f4b400;
+}
+
+.language-tile p {
+    font-size: 1rem;
+    color: #cbd3df;
+}
+
+
+
+/* Still Learning Section */
+.learning {
+    padding: 50px 20px;
+    background-color: #002855;
+    text-align: center;
+}
+
+.learning h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f4b400;
+    font-weight: 700;
+}
+
+.learning-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.learning-item {
+    background-color: #004080;
+    border-radius: 10px;
+    padding: 15px;
+    color: #cbd3df;
+    width: 150px; /* Fixed width for consistency */
+    text-align: center;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin: 20px 0; /* Space above and below the icons */
+}
+
+.skills img {
+    width: 100px; /* Adjust size as needed */
+}
+
+/* Projects Page */
+.projects {
+    padding: 100px 20px;
+    background-color: #003f75;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #f4b400;
+    font-weight: 700;
+}
+
+.project-list {
+    display: flex; /* Change to flexbox for tile display */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center align items */
+    gap: 30px; /* Space between tiles */
+    margin: 0 auto; /* Center the entire list */
+}
+
+.project-item {
+    background-color: #004080;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 300px; /* Fixed width for tiles */
+    text-align: center; /* Center text */
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffd966;
+}
+
+.project-item p {
+    font-size: 1.2rem;
+    color: #cbd3df;
+}
+.more-projects {
+    background-color: #0056a6; /* Slightly different background color */
+    padding: 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    margin-top: 30px; /* Space above the section */
+    color: #f4b400; /* Color of the text */
+    text-align: center; /* Centered text */
+}
+
+.more-projects h2 {
+    font-size: 2rem; /* Size of the header */
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.more-projects p {
+    font-size: 1.2rem; /* Size of the paragraph text */
+    color: #cbd3df; /* Color for the description */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f3f;
+    color: #cbd3df;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button, .cta {
+    background-color: #f4b400;
+    color: #001f3f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .cta:hover {
+    background-color: #ffd966;
+    transform: translateY(-3px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .landing h1 {
+        font-size: 3rem;
+    }
+
+    .landing p {
+        font-size: 1.2rem;
+    }
+
+    .about h1, .projects h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-item {
+        padding: 15px;
+    }
+}
